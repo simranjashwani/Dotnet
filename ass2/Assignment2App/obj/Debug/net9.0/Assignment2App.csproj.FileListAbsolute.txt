@@ -1,0 +1,15 @@
+C:\Users\Simran\dotnet\ass2\Assignment2App\obj\Debug\net9.0\Assignment2App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Simran\dotnet\ass2\Assignment2App\obj\Debug\net9.0\Assignment2App.AssemblyInfoInputs.cache
+C:\Users\Simran\dotnet\ass2\Assignment2App\obj\Debug\net9.0\Assignment2App.AssemblyInfo.cs
+C:\Users\Simran\dotnet\ass2\Assignment2App\obj\Debug\net9.0\Assignment2App.csproj.CoreCompileInputs.cache
+C:\Users\Simran\dotnet\ass2\Assignment2App\obj\Debug\net9.0\Assignment2App.sourcelink.json
+C:\Users\Simran\dotnet\ass2\Assignment2App\bin\Debug\net9.0\Assignment2App.exe
+C:\Users\Simran\dotnet\ass2\Assignment2App\bin\Debug\net9.0\Assignment2App.deps.json
+C:\Users\Simran\dotnet\ass2\Assignment2App\bin\Debug\net9.0\Assignment2App.runtimeconfig.json
+C:\Users\Simran\dotnet\ass2\Assignment2App\bin\Debug\net9.0\Assignment2App.dll
+C:\Users\Simran\dotnet\ass2\Assignment2App\bin\Debug\net9.0\Assignment2App.pdb
+C:\Users\Simran\dotnet\ass2\Assignment2App\obj\Debug\net9.0\Assignment2App.dll
+C:\Users\Simran\dotnet\ass2\Assignment2App\obj\Debug\net9.0\refint\Assignment2App.dll
+C:\Users\Simran\dotnet\ass2\Assignment2App\obj\Debug\net9.0\Assignment2App.pdb
+C:\Users\Simran\dotnet\ass2\Assignment2App\obj\Debug\net9.0\Assignment2App.genruntimeconfig.cache
+C:\Users\Simran\dotnet\ass2\Assignment2App\obj\Debug\net9.0\ref\Assignment2App.dll
