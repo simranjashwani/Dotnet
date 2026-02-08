@@ -16,7 +16,7 @@ class NullableExample
               //  null-coalescing operator If n is null, value becomes -1
               int value = n ?? -1;
               // reference type 
-              string s = null;
+              string? s = null;
               // null-conditional operator
               int? length = s?.Length;
 

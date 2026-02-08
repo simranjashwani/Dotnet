@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Simran\\dotnet\\ass2\\Assignment2App\\Assignment2App.csproj": {}
+    "C:\\Users\\Simran\\dotnet\\ass2\\assignment2App\\Assignment2App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Simran\\dotnet\\ass2\\Assignment2App\\Assignment2App.csproj": {
+    "C:\\Users\\Simran\\dotnet\\ass2\\assignment2App\\Assignment2App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Simran\\dotnet\\ass2\\Assignment2App\\Assignment2App.csproj",
+        "projectUniqueName": "C:\\Users\\Simran\\dotnet\\ass2\\assignment2App\\Assignment2App.csproj",
         "projectName": "Assignment2App",
-        "projectPath": "C:\\Users\\Simran\\dotnet\\ass2\\Assignment2App\\Assignment2App.csproj",
+        "projectPath": "C:\\Users\\Simran\\dotnet\\ass2\\assignment2App\\Assignment2App.csproj",
         "packagesPath": "C:\\Users\\Simran\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Simran\\dotnet\\ass2\\Assignment2App\\obj\\",
+        "outputPath": "C:\\Users\\Simran\\dotnet\\ass2\\assignment2App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

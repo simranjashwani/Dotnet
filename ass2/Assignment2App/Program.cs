@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography;
 using System.Text;
 
 class Program
@@ -11,5 +12,11 @@ class Program
        StringBuilderExample.Run();
          StringvsStringBuilder.Run();
          VarExample.Run();
+         Age.Run();
+         PatternExample.Run();
+         LogicalComparisonExample.Run();
+       OperatorsExample.Run();
+       ArrayExample.Run();
+ 
     }
 }
