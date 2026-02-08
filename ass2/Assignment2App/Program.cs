@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Security.Cryptography;
 using System.Text;
-
-class Program
+namespace Assignment2App
 {
-    static void Main()
+class Program
+
+{
+     static void Main(string[] args)
     {
        Structure.Run();
        DataTypes.Run();
@@ -17,6 +19,8 @@ class Program
          LogicalComparisonExample.Run();
        OperatorsExample.Run();
        ArrayExample.Run();
+     ProgramExample.Run();
  
     }
+}
 }
