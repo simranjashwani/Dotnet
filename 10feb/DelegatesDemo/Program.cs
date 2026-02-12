@@ -1,103 +1,128 @@
 ﻿namespace DelegatesDemo;
-
-class Program
+public class Program
 {
-    static void Main(string[] args)
+   public static void Main()
     {
-        DelegatesDemo app = new DelegatesDemo();
-        // Delegates make code flexible by allowing methods to be passed, stored, and invoked dynamically, enabling loose coupling and event-driven programming.
-        app.Run();
+//         // DelegatesDemo app = new DelegatesDemo();
+//         // Delegates make code flexible by allowing methods to be passed, stored, and invoked dynamically, enabling loose coupling and event-driven programming.
+//         // app.Run();
+//         // EventDemo.Run();
+//         // LinqDemo.Run();
+        JoinQuery.Run();
+
     }
 }
-// void Add(int a,int b)
-// delegate void MathOperation(int a, int b); //for below operations
-delegate int MathOperation(int a, int b);
 
-// generic delegates 
-// delegate TResult GenericTwoParameterFunction<TFirst,TSecond,TResult>(TFirst a ,TSecond b);
+// // void Add(int a,int b)
+// // delegate void MathOperation(int a, int b); //for below operations
+// delegate int MathOperation(int a, int b);
 
-delegate void GenericTwoParameterFunction<TFirst, TSecond>(TFirst a, TSecond b);
+// // generic delegates 
+// // delegate TResult GenericTwoParameterFunction<TFirst,TSecond,TResult>(TFirst a ,TSecond b);
 
-class DelegatesDemo
-{
-    void PrintMessage(string message)
-    {
-        Console.WriteLine(message);
-    }
+// delegate void GenericTwoParameterFunction<TFirst, TSecond>(TFirst a, TSecond b);
 
-    bool IsEven(int number)
-    {
-        return number % 2 == 0;
-    }
+// class DelegateDemo
+// {
+//     public void HigherOrderFunctionDemo()
+//     {
+//         var result = CalculateArea(AreaOfTriangle);
+//         Console.WriteLine($"area :{result}");
+//     }
+
+//     int CalculateArea(Func<int, int, int> areaFunction)
+//     {
+//         return areaFunction(5, 10);
+//     }
+//     int AreaOfRectangle(int length, int width)
+//     {
+//         return length * width;
+//     }
+//     int AreaOfTriangle(int baseLength, int height)
+//     {
+//         return (baseLength * height) / 2;
+//     }
 
 
-    //  keywaord     methodname      a,b variable int-datatype inside()is parameter
-    public void Run()
-    {
-        // multiple delegates :adding more to invocation
-        // MathOperation operation = Add;
-        // // GenericTwoParameterFunction<int, int, int> genericOperation = Add;
-        Func<int, int, int> genericOperation = Add;
+//     void PrintMessage(string message)
+//     {
+//         Console.WriteLine(message);
+//     }
 
-        Action<string> action = PrintMessage;
-        action("Hello from Action delegate");
+//     bool IsEven(int number)
+//     {
+//         return number % 2 == 0;
+//     }
 
-        Predicate<int> predicate = IsEven;
-        int testNumber = 4;
 
-        Console.WriteLine($"Is{testNumber} even? {predicate(testNumber)}");
+//     //  keywaord     methodname      a,b variable int-datatype inside()is parameter
+//     public void Run()
+//     {
+//         HigherOrderFunctionDemo();
+//         // multiple delegates :adding more to invocation
+//         // MathOperation operation = Add;
+//         // // GenericTwoParameterFunction<int, int, int> genericOperation = Add;
+//         Func<int, int, int> genericOperation = Add;
 
-        Func<string, string, string> stringOperation = Concatenate;
+//         Action<string> action = PrintMessage;//
+//         action("Hello from Action delegate");
 
-        var x = stringOperation("Hello, ", "World!");
-        Console.WriteLine($"Concatenation result: {x}");
+//         Predicate<int> predicate = IsEven;
+//         int testNumber = 4;
 
-        // Multicast Func (works, but last return wins
-        genericOperation += Subtract;
-        genericOperation += Multiply;
-        genericOperation += Divide;
+//         Console.WriteLine($"Is{testNumber} even? {predicate(testNumber)}");
 
-        genericOperation -= Subtract;//removing subtract method from invocation
+//         Func<string, string, string> stringOperation = Concatenate;
 
-        var result = genericOperation(5, 3);
-        Console.WriteLine($"final result:{result}");
+//         var x = stringOperation("Hello, ", "World!");
+//         Console.WriteLine($"Concatenation result: {x}");
 
-    }
-    public string Concatenate(string a, string b)
-    {
-        return a + b;
-    }
+//         // Multicast Func (works, but last return wins
+//         genericOperation += Subtract;
+//         genericOperation += Multiply;
+//         genericOperation += Divide;
 
-    public int Add(int a, int b)
-    {
-        Console.WriteLine($"sum of {a} and {b} is: {a + b}");
-        return (a + b);
-    }
+//         genericOperation -= Subtract;//removing subtract method from invocation
 
-    public int Subtract(int a, int b)
-    {
-        Console.WriteLine($"difference between {a}and {b} is:{a - b}");
-        return (a - b);
-    }
-    public int Multiply(int a, int b)
-    {
-        Console.WriteLine($" multiply between {a}and {b} is:{a * b}");
-        return (a * b);
-    }
-    public int Divide(int a, int b)
-    {
-        if (b != 0)
-        {
-            Console.WriteLine($"The quotient of {a} and {b} is: {a / b}");
-            return a / b;
-        }
-        else
-        {
-            Console.WriteLine("Cannot divide by zero.");
-        }
-        return 0;
-    }
+//         var result = genericOperation(5, 3);
+//         Console.WriteLine($"final result:{result}");
 
-}
+//     }
+//     public string Concatenate(string a, string b)
+//     {
+//         return a + b;
+//     }
 
-// builtin delegates >> func,action,predictive
+//     public int Add(int a, int b)
+//     {
+//         Console.WriteLine($"sum of {a} and {b} is: {a + b}");
+//         return (a + b);
+//     }
+
+//     public int Subtract(int a, int b)
+//     {
+//         Console.WriteLine($"difference between {a}and {b} is:{a - b}");
+//         return (a - b);
+//     }
+//     public int Multiply(int a, int b)
+//     {
+//         Console.WriteLine($" multiply between {a}and {b} is:{a * b}");
+//         return (a * b);
+//     }
+//     public int Divide(int a, int b)
+//     {
+//         if (b != 0)
+//         {
+//             Console.WriteLine($"The quotient of {a} and {b} is: {a / b}");
+//             return a / b;
+//         }
+//         else
+//         {
+//             Console.WriteLine("Cannot divide by zero.");
+//         }
+//         return 0;
+//     }
+
+// }
+
+// // builtin delegates >> func,action,predictive
