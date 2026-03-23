@@ -1,0 +1,10 @@
+GET https://localhost:5001/api/customer
+
+###
+
+POST https://localhost:5001/api/customer
+Content-Type: application/json
+
+{
+  "name": "Simran"
+}

@@ -8,7 +8,7 @@ public class Employee
 
     public Employee(int ID, string FirstName, string LastName, int Age)
     {
-        this.ID = ID;
+        this.ID = ID;  //used to point to reffer to the current abject of the class
         this.FirstName = FirstName;
         this.LastName = LastName;
         this.Age = Age;
@@ -30,3 +30,4 @@ public static class EmployeeExtension
 
 }
 
+//add new method to existing class withod modifying its source code

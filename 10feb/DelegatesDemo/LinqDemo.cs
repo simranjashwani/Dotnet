@@ -35,7 +35,7 @@ public class LinqDemo
             Console.WriteLine($"{s.Name} more than 21 years old.");
         }
 
-        // fluid api form
+        // fluent api form
 
         // var x= students
         // .Where(s => sbyte.Age >21)
